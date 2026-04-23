@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="nim"></div>
+        <div id="nama"></div>
+        <div id="usia"></div>
+        <div id="hobi"></div><hr><hr>
+        <div id="storytelling"></div>
+        <script>
+            var nim = "15241033";
+            var nama = "Andre Kuswara";
+            var usia = 20;
+            var hobi = ['Oprek motor'];
+            var storytelling = "Perkenalkan, nama saya " +nama+ ". Saat ini saya berusia " +usia+ " tahun dan berstatus sebagai mahasiswa dengan NIM " +nim+ ". Di luar waktu kuliah, saya memiliki hobi untuk mengisi waktu luang, yaitu " +hobi[0]+ ".";          
+            document.getElementById("nim").innerHTML = "NIM : " + nim;
+            document.getElementById("nama").innerHTML = "Nama : " + nama;
+            document.getElementById("usia").innerHTML = "Usia : " + usia;
+            document.getElementById("hobi").innerHTML = "Hobi : " + hobi;
+            document.getElementById("storytelling").innerHTML = storytelling;
+        </script>
+    </body>
+</html>
