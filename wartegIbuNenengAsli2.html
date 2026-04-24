@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warteg Ibu Neneng - (asli)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Poppins:wght@400;600;900&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+ 
+        :root {
+            --bg-color: #f4f4f4; 
+            --warteg-yellow: #F4BA19; 
+            --warteg-red: #D32F2F;    
+            --warteg-white: #FFFFFF;
+            --warteg-black: #1A1A1A;
+            
+            --font-heading: 'Poppins', sans-serif;
+            --font-handwriting: 'Caveat', cursive;
+            --font-body: 'Quicksand', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--warteg-black);
+            font-family: var(--font-body);
+            background-image: radial-gradient(var(--warteg-black) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+
+        header {
+            background-color: var(--warteg-yellow);
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 6px solid var(--warteg-black);
+            box-shadow: 0 8px 0 var(--warteg-red);
+            margin-bottom: 50px;
+        }
+
+
+        header h1 {
+            font-family: var(--font-heading);
+            font-weight: 900;
+            font-size: 3.5rem;
+            color: var(--warteg-white);
+            margin: 0;
+            text-shadow: 3px 3px 0 var(--warteg-black);
+            line-height: 1.2;
+            text-transform: uppercase;
+        }
+
+        header h1 .asli {
+            font-family: var(--font-handwriting);
+            color: var(--warteg-red);
+            font-size: 3.5rem;
+            text-transform: lowercase;
+            text-shadow: none;
+            display: inline-block;
+            transform: rotate(-10deg);
+            margin-left: 10px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--warteg-white);
+            border: 4px solid var(--warteg-black);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 12px 12px 0 var(--warteg-yellow);
+            margin-bottom: 80px;
+        }
+
+        .showcase {
+            margin-bottom: 40px;
+        }
+
+        .showcase img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            border: 4px solid var(--warteg-black);
+            box-sizing: border-box;
+            box-shadow: 6px 6px 0 var(--warteg-red);
+            transition: transform 0.3s ease;
+        }
+
+        .showcase img:hover {
+            transform: translate(-4px, -4px);
+            box-shadow: 10px 10px 0 var(--warteg-red);
+        }
+
+        .summary {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 20px;
+            background-color: #fff9e6;
+            border: 3px dashed var(--warteg-yellow);
+            border-radius: 12px;
+        }
+
+        .summary h2 {
+            font-family: var(--font-heading);
+            color: var(--warteg-red);
+            font-size: 2rem;
+            margin-top: 0;
+            text-transform: uppercase;
+        }
+
+        .summary p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            font-weight: 500;
+            color: var(--warteg-black);
+        }
+
+        .menu-section {
+            margin-top: 40px;
+        }
+
+        .menu-header {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            text-align: center;
+            background-color: var(--warteg-black);
+            color: var(--warteg-white);
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            display: inline-block;
+            transform: rotate(-2deg);
+        }
+
+        .menu-header-wrapper {
+            text-align: center;
+        }
+
+        .menu-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 25px;
+            background-color: var(--warteg-white);
+            border: 3px solid var(--warteg-black);
+            border-radius: 12px;
+            transition: all 0.2s ease;
+        }
+
+        .menu-item:hover {
+            background-color: var(--warteg-yellow);
+            transform: translateX(10px);
+            box-shadow: 6px 6px 0 var(--warteg-black);
+        }
+
+        .menu-name {
+            font-family: var(--font-heading);
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+
+        .menu-price {
+            font-family: var(--font-heading);
+            font-size: 1.2rem;
+            font-weight: 900;
+            color: var(--warteg-white);
+            background-color: var(--warteg-red);
+            padding: 8px 16px;
+            border-radius: 20px;
+            border: 2px solid var(--warteg-black);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: var(--warteg-black);
+            color: var(--warteg-white);
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.5rem; }
+            header h1 .asli { font-size: 2.5rem; display: block; margin-top: 10px; transform: rotate(0); }
+            .container { margin: 20px; padding: 20px; }
+            .menu-item { flex-direction: column; text-align: center; gap: 15px; }
+            .menu-price { width: 100%; box-sizing: border-box; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Warteg Ibu Neneng <span class="asli">(asli)</span></h1>
+    </header>
+
+    <div class="container">
+        
+        <section class="showcase">
+            <img src="D:/Pictures/ibuneneng.jpg" alt="Papan Nama Warteg Ibu Neneng">
+        </section>
+
+        <section class="summary">
+            <h2>Karya Seni Kuliner</h2>
+            <p>
+                Menggabungkan tradisi lokal dengan sentuhan mahakarya. Setiap hidangan di Warteg Ibu Neneng diracik dengan dedikasi tanpa kompromi, menghadirkan harmoni rempah nusantara yang tak lekang oleh waktu. Pengalaman gastronomi yang dirancang untuk mereka yang menghargai keaslian rasa.
+            </p>
+        </section>
+
+        <section class="menu-section">
+            <div class="menu-header-wrapper">
+                <h3 class="menu-header">Koleksi Menu</h3>
+            </div>
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <span class="menu-name">Kelinci Panggang / Goreng</span>
+                    <span class="menu-price">Rp 15.000</span>
+                </li>
+                <li class="menu-item">
+                    <span class="menu-name">Soto Bandung</span>
+                    <span class="menu-price">Rp 12.000</span>
+                </li>
+                <li class="menu-item">
+                    <span class="menu-name">Gule Kelinci</span>
+                    <span class="menu-price">Rp 23.000</span>
+                </li>
+            </ul>
+        </section>
+
+    </div>
+
+    <footer>
+        &copy; 2026 Warteg Ibu Neneng (Asli). All Rights Reserved.
+    </footer>
+
+</body>
+</html>
